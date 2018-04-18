@@ -9,6 +9,10 @@ class SumSinglesSpec extends WordSpec with MustMatchers {
 
     }
 
+    "Take a list(1,1,2,2,3,3,4,4,5,5) and return 15" in{
+      SumSingles.listAdder(List(1,1,2,2,3,3,4,4,5,5)) mustEqual 15
+    }
+
   }
 
 }
