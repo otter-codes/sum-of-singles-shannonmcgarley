@@ -1,8 +1,10 @@
 object SumSingles extends App {
 
-  def listAdder(listOfNums: List[Int]): Int = {
-    listOfNums.distinct.sum
+  def listApply(listOfNums: List[Int]): Int = {
+    val listAdder = listOfNums.sum
+    val dupeRemover = listOfNums.distinct
+    2*dupeRemover.sum-listAdder
   }
-listAdder(List(1,1,2,2,3,3,4,4,5,5))
+listApply(List(1,1,2,2,3,3,4,4,5,5))
 
 }
