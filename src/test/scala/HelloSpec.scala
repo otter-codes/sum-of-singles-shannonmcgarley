@@ -1,11 +1,12 @@
 import org.scalatest._
 
-class HelloSpec extends WordSpec with MustMatchers {
+class SumSinglesSpec extends WordSpec with MustMatchers {
 
   "Hello" must {
 
-    "say hello" in {
-      Hello.greet mustEqual "hello"
+    "Take a list(1,2,3,4,5) and return 15" in {
+      SumSingles.listAdder(List(1,2,3,4,5)) mustEqual 15
+
     }
 
   }
