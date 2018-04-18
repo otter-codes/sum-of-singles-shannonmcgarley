@@ -6,9 +6,7 @@ class SumSinglesSpec extends WordSpec with MustMatchers {
 
     "Take a list(1,2,3,4,5) and return 15" in {
       SumSingles.listApply(List(1,2,3,4,5)) mustEqual 15
-
     }
-
     "Take a list(1,1,2,3,4,5) and return 14" in {
       SumSingles.listApply(List(1,1,2,3,4,5)) mustEqual 14
     }
